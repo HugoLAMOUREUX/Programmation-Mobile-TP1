@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nbCoup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:background="#6AB3E4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Historique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/historique"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SaisieNb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/saisieNb"
+                android:textAlignment="center" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/okBtn"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:backgroundTint="#EDE8E8" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="59dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finJeu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/quitter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="#979393"
+            android:text="@string/quitterBtn"
+            android:textColor="#000000"
+            app:backgroundTint="#EDE8E8"
+            tools:text="Quitter" />
+
+        <Button
+            android:id="@+id/rejouer"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:background="#979393"
+            android:text="@string/rejouerBtn"
+            android:textColor="#000000"
+            app:backgroundTint="#EDE8E8"
+            app:rippleColor="#8F4A4A"
+            app:strokeColor="#FF1717"
+            tools:text="Rejouer" />
+    </LinearLayout>
+
+</LinearLayout>

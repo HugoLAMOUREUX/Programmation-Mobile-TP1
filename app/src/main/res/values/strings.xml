@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jeu du nombre Mystère</string>
+    <string name="finJeu" />
+    <string name="quitterBtn">Quitter</string>
+    <string name="rejouerBtn">Rejouer</string>
+    <string name="historique">Historique</string>
+    <string name="saisieNb">Saisir un nombre\n(entre 0 et 9999)</string>
+    <string name="okBtn">OK</string>
+</resources>
